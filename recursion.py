@@ -16,5 +16,27 @@ def num(n):
     else:
         num(n-1)
         print(n)
+
 a=input("num?")
 num(10)
+
+
+
+def sum(n):
+    if n == 1:
+        return n
+    else:
+        return n+sum(n-1)
+a=sum(10)
+print(a)
+
+
+
+
+def multiple(n):
+    if n == 1:
+        return n
+    else:
+        return n*multiple(n-1)
+a=multiple(10)
+print(a)
